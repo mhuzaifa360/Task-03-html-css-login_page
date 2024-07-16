@@ -3,56 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="banner">
+    <div class="main-container">
 
-        <div class="container">
-            
-            <div class="welcome-page">
-                <h1> Welcome <br> Back!</h1>
-            </div>
+        <div class="page-1">
+            <p>Welcome Back!</p>
+        </div>
 
-            <div class="content">
-                <div class="text-area">
+        <!--!-----box 2  -->
 
-                    <h2>Login</h2>
-                    <p>Welcome back! Please login to your account.</p>
+        <div class="page-2">
+           
+
+            <form action="">
+
+                <h2>Login</h2>
+
+                <p>Welcome back to your account please login.</p>
+
+                <!--?----username  -->
+                <div class="input-name input">
+                    <!-- <label for="">User name </label> -->
+                    <input type="text" name="username" id="name" required placeholder="Username">
+                </div>
+
+
+                <!--?----password  -->
+                <div class="input-password input">
+                    <!-- <label for="">Password </label> -->
+                    <br>
+                    <input type="password" name="password" id="password" required placeholder="Password" >
+                </div>
+
+                <!--?----checkbox  -->
+                <div class="checkbox ">
+
+                    <div class="Remember-me">
+                        <input type="checkbox">
+                        <label for="">Remember me</label>
+                    </div>
+
+                    <a href="#" style="color: white;">Forgot password</a>
                     
-                    <form >
-                        <label for="input email">
-                            User email  <br>
-                            <input type="text">
-                        </label>
-                        
-                        <br>
-                        
-                        <label for="password">
-                            Password  <br>
-                            <input type="password" name="">
-                        </label>
-                        <br>
-                        <div class="forgot-area">
+                </div>
 
-                            <input type="checkbox" name="Remember Me" id="checkbox1" >Remember Me
-                            
-                            
-                            <a href="#">Forget Password?</a>
-                        </div>
-                            <br>
-                        <button> Login </button>
-                        
-                        <p>New user? <a href="#">Sign up</a></p>
-                    </form>
-                </div>  <!--! end of text area -->
+                <!--?----login button---  -->
+                <div class="login">
+                    <button>Login</button>
+                </div>
+
+                <!--?----sign up link  -->
+                <div class="sign-up">
+                    <a href="#" style="color: white;">Sign up</a>
+                </div>
                 
-            </div> <!--! end of content section -->
-
-            </div>  <!--! end of container-->
-
-        </div>  <!--! end of banner -->
-
-    </body>
-    </html>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
