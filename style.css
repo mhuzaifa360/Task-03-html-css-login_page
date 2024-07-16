@@ -10,6 +10,7 @@ body{
     justify-content: center;
     height: 100vh;
     align-items: center;
+    overflow: scroll;
 
     background-image:linear-gradient(rgba(0, 0, 0, 0.35),  rgba(0, 0, 0, 0.25) , rgba(0, 0, 0, 0.16)) , url(./135264.jpg);
     /* background-image: url(./135264.jpg); */
@@ -17,6 +18,8 @@ body{
     background-size: cover  ;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
+    /* background-clip: padding-box; */
 }
 .main-container{
     display: flex;
@@ -160,6 +163,9 @@ body{
         flex-direction: column;
         /* flex-wrap: nowrap; */
         
+    }
+    body{
+        overflow: scroll;
     }
     .page-1{
         height: 50%;
